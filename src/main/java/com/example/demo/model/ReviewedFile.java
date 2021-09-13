@@ -9,8 +9,8 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
-@Table(name = "ReviewedFiles")
-@Entity(name = "ReviewedFiles")
+@Table(name = "file_locations")
+@Entity(name = "file_locations")
 
 public class ReviewedFile {
 
@@ -40,7 +40,7 @@ public class ReviewedFile {
     @Column(name = "send_to_it")
     Boolean sendToIT;
 
-    @Column(name = "time_stamp")
+    @Column(name = "date_answered")
     LocalDateTime dateSubmitted;
 
 }
